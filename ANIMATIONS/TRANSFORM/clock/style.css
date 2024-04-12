@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(57, 36, 77);
+  height: 100vh;
+}
+
+.clock {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(127, 145, 25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+}
+
+.clock-center {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(235, 30, 30);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* hour-hand */
+.hour-hand {
+  background-color: black;
+  left: 50%;
+  top: 20px;
+  width: 2.5px;
+  height: 80px;
+  /* transform: translate(50%, 0); */
+  transform-origin: 50% 100%;
+  position: absolute;
+  border-radius: 6px;
+  animation: clockHourHand 43200s linear infinite;
+}
+
+@keyframes clockHourHand {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.line-orange {
+  height: 2px;
+  background-color: orange;
+  border-radius: 6px;
+}
+
+/* minute-hand */
+.minute-hand {
+  background-color: black;
+  left: 50%;
+  top: 20px;
+  width: 2.5px;
+  height: 80px;
+  /* transform: translate(50%, 0); */
+  transform-origin: 50% 100%;
+  position: absolute;
+  border-radius: 6px;
+  animation: clockMinuteHand 3600s linear infinite;
+}
+
+@keyframes clockMinuteHand {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.line-green {
+  height: 2px;
+  background-color: rgb(26, 130, 25);
+  border-radius: 6px;
+}
+/* second hand */
+.sec-hand {
+  background-color: black;
+  left: 50%;
+  top: 20px;
+  width: 2px;
+  height: 80px;
+  /* transform: translate(50%, 0); */
+  transform-origin: 50% 100%;
+  position: absolute;
+  border-radius: 6px;
+  animation: clockSecHand 60s linear infinite;
+}
+
+.dot {
+  background-color: rgb(0, 0, 0);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.top,
+.right,
+.bottom,
+.left {
+  position: absolute;
+}
+
+.top {
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+}
+
+.right {
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.bottom {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.left {
+  top: 50%;
+  left: 5px;
+  transform: translate(0, -50%);
+}
+
+.line {
+  height: 2px;
+  background-color: rgb(195, 24, 24);
+  border-radius: 6px;
+}
+
+@keyframes clockSecHand {
+  100% {
+    transform: rotate(360deg);
+  }
+}

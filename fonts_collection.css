@@ -1,0 +1,18 @@
+/* 
+Web safe fonts
+Speaking of font availability, there are only a certain number of fonts that are generally available across all systems and can therefore be used without much worry. These are the so-called web safe fonts.
+
+NOTE: the web safe fonts are known to be available on nearly all instances of the most used operating systems (Windows, macOS, the most common Linux distributions, Android, and iOS).
+
+GOOGLE FONTS COLLECTIONS
+Poppins
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+font-family: "Poppins", sans-serif;
+
+
+
+
+
+
+*/
