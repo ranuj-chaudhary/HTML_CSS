@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey_form.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Enter Your Personal Info</p>
+    <form id="survey-form">
+      <label for="name" id="name-label"
+        >Name :
+        <input
+          id="name"
+          name="name"
+          type="text"
+          placeholder="Enter Your Name"
+          required
+      /></label>
+      <label for="email" id="email-label"
+        >Email :
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Enter Your Email"
+          required
+      /></label>
+      <label for="number" id="number-label"
+        >Number :
+        <input
+          id="number"
+          name="number"
+          type="number"
+          min="4"
+          max="10"
+          placeholder="Enter Number"
+          required
+      /></label>
+      <fieldset>
+        <legend>Gender :</legend>
+        <label for="gender"
+          ><input
+            id="gender"
+            type="radio"
+            name="gender"
+            class="inline"
+            value="Male"
+          />
+          Male
+        </label>
+        <label for="gender"
+          ><input
+            id="gender"
+            type="radio"
+            name="gender"
+            class="inline"
+            value="Female"
+          />
+          Female
+        </label>
+      </fieldset>
+
+      <label for="dropdown"
+        >Developer Level:
+        <select id="dropdown" name="dropdown" required>
+          <option value="">(Select Option)</option>
+          <option value="Beginner">Beginner</option>
+          <option value="Experienced">Experienced</option>
+        </select></label
+      >
+      <fieldset>
+        <legend>Favourite CSS Framework</legend>
+        <label for="fields"
+          ><input
+            id="fields"
+            type="checkbox"
+            name="fields"
+            value="Bootstrap"
+            class="inline"
+          />Bootstrap</label
+        >
+        <label for="fields"
+          ><input
+            id="fields"
+            type="checkbox"
+            name="fields"
+            class="inline"
+            value="Tailwind"
+          />Tailwind</label
+        >
+      </fieldset>
+      <textarea
+        name="query"
+        rows="5"
+        cols="30"
+        placeholder="Why you choose above css framework.."
+        required
+      ></textarea>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

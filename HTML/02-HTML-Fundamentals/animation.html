@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANIMATION CSS</title>
+    <link rel="stylesheet" href="css/animation.css" />
+    <script
+      src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- CSS animations make it possible to animate transitions from 
+      one CSS style configuration to another. Animations consist of
+       two components, a style describing the CSS animation and a set 
+       of keyframes that indicate the start and end states of the animation's style,
+        as well as possible intermediate waypoints. -->
+    <div class="container">
+      <div class="box b">
+        <div class="second_div_circle"></div>
+        <div id="center">Rotate (center center)</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="rotateBox" class="box">
+        <div id="circle">
+          <div id="circle-div">
+            <img id="close-btn" src="images/bx-x-circle.svg" alt="" />
+
+            <img id="rotateMenu" src="images/bx-align-right.svg" alt="" />
+          </div>
+        </div>
+        <div id="center">Rotate (left top)</div>
+      </div>
+
+      <!-- <div class="box c">
+        <div id="center">Rotate (center top)</div>
+      </div>
+      <div class="box d">
+        <div id="center">Rotate (right top)</div>
+      </div>
+      <div class="box e">
+        <div id="center">Rotate (left top)</div>
+      </div>
+      <div class="box f">
+        <div id="center">Rotate (10% bottom)</div>
+      </div>
+      <div class="box g">
+        <div id="center">Rotate (50% bottom)</div>
+      </div>
+      <div class="box skew"><div id="center">Skey</div></div>
+      <div class="box scale"><div id="center">Scale</div></div> -->
+    </div>
+
+    <!-- 
+
+Syntax
+/* Keyword values */
+transform: none;
+
+/* Function values */
+transform: matrix(1, 2, 3, 4, 5, 6);
+transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+transform: perspective(17px);
+transform: rotate(0.5turn);
+transform: rotate3d(1, 2, 3, 10deg);
+transform: rotateX(10deg);
+transform: rotateY(10deg);
+transform: rotateZ(10deg);
+transform: translate(12px, 50%);
+transform: translate3d(12px, 50%, 3em);
+transform: translateX(2em);
+transform: translateY(3in);
+transform: translateZ(2px);
+transform: scale(2, 0.5);
+transform: scale3d(2.5, 1.2, 0.3);
+transform: scaleX(2);
+transform: scaleY(0.5);
+transform: scaleZ(0.3);
+transform: skew(30deg, 20deg);
+transform: skewX(30deg);
+transform: skewY(1.07rad);
+
+/* Multiple function values */
+transform: translateX(10px) rotate(10deg) translateY(5px);
+transform: perspective(500px) translate(10px, 0, 20px) rotateY(3deg);
+
+/* Global values */
+transform: inherit;
+transform: initial;
+transform: revert;
+transform: revert-layer;
+transform: unset;
+
+
+
+ -->
+  </body>
+</html>
