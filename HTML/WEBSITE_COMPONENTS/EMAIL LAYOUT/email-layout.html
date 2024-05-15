@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMAIL LAYOUT</title>
+    <style>
+      /*
+          SPACING SYSTEM (px)
+          2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+          FONT SIZE SYSTEM (px)
+          10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+          */
+
+      /*
+          MAIN COLOR: #087f5b
+          GREY COLOR: #343a40
+          */
+
+      :root {
+        --green: #087f5b;
+        --gray: #868e86;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* GENERAL STYLES */
+
+      body {
+        color: #343a40;
+        line-height: 1;
+        font-size: 24px;
+        display: grid;
+        grid-template-columns: 80px 400px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+        height: 100vh;
+        text-align: center;
+        font-weight: bold;
+      }
+      nav,
+      menu,
+      section,
+      main,
+      aside {
+        padding: 24px;
+      }
+      nav {
+        background-color: #b197fc;
+        grid-row: 1/-1;
+        color: white;
+      }
+
+      menu {
+        background-color: #7048e8;
+        color: #fff;
+        grid-column: 2/-1;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+      }
+      button {
+        font-size: 16px;
+        background-color: #8968ec;
+        border: none;
+        cursor: pointer;
+        color: white;
+        padding: 8px 12px;
+        font-weight: bold;
+        display: inline-block;
+      }
+      button:last-child {
+        background-color: rgb(194, 7, 138);
+        margin-left: auto;
+      }
+      section {
+        background-color: #e9ecef;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        overflow: scroll;
+      }
+      .email {
+        background-color: rgba(128, 128, 128, 0.385);
+        height: 96px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      aside {
+        background-color: #e9ecef;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>NAV</nav>
+    <menu>
+      <button>New</button>
+      <button>Compose</button>
+      <button>Reply</button>
+      <button>Forward</button>
+      <button>Trash</button>
+    </menu>
+    <section>
+      <div class="email">Email</div>
+      <div class="email">Email</div>
+      <div class="email">Email</div>
+      <div class="email">Email</div>
+      <div class="email">Email</div>
+      <div class="email">Email</div>
+      <div class="email">Email</div>
+      <div class="email">Email</div>
+    </section>
+    <main>Email View</main>
+    <aside>Additional Info</aside>
+  </body>
+</html>

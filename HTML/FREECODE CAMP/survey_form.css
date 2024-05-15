@@ -1,0 +1,72 @@
+body {
+  height: 100vh;
+  background-color: #2a6592;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  padding-top: 16px;
+  margin: 0;
+}
+
+h1,
+p {
+  text-align: center;
+  line-height: 10px;
+}
+
+form {
+  width: 60%;
+  min-width: 300px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 16px 16px;
+  height: 100%;
+  background-color: rgb(4, 58, 105);
+}
+
+input {
+  width: 100%;
+  padding: 8px 2px;
+}
+
+input,
+label {
+  margin: 8px 0;
+  font-weight: 400;
+}
+
+input[name="fields"],
+input[name="gender"] {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+label[for="gender"] {
+  width: 49%;
+  display: inline-block;
+}
+
+label[for="fields"] {
+  display: inline-block;
+  width: 48%;
+  vertical-align: middle;
+}
+
+select {
+  padding: 6px 2px;
+  margin: 8px 0;
+}
+
+fieldset {
+  margin: 8px 0;
+}
+
+textarea {
+  width: 100%;
+}
+
+input[type="submit"] {
+  width: 80%;
+  margin: 8px auto;
+  display: block;
+}
