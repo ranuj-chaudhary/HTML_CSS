@@ -1,0 +1,40 @@
+/* 
+0 - *
+1 - element &  pseudo element
+10 - classes, pseudo class, attribute
+100 - id
+1000 - inline css
+*/
+
+
+/* 
+.class .class {
+    color: #fff;
+ } 10 + 10 = 20
+
+#id .class #id div:hover {
+} = = 100 + 10 + 100 + 1 + 10 = 211
+
+// inline css has highest priority of all i.e 1000
+<div style="background-color: #ffff"></div>
+ */
+
+ /* :is, :not, :where */
+/*
+highest specificity holder will be considered only 
+:is(#id div .class){
+}
+specificity = 100 (id has highest specificity over div and class
+
+Note: :not WORK SAME AS OF :is
+highest specificity holder will be considered only 
+:not(#id div .class){
+}
+specificity = 100 (id has highest specificity over div and class
+
+
+:where(#id div .class){
+}
+specificity = 0 
+Mostly used when using third party css
+*/
