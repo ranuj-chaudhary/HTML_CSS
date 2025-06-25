@@ -1,0 +1,83 @@
+.icon-rotation-anticlockwise {
+  animation: rotate-clockwise 20s linear infinite;
+}
+
+.icon-rotation-clockwise {
+  animation: rotate-anti-clockwise 20s linear infinite;
+  transform-origin: center;
+}
+.outer-container {
+  box-shadow: 0px 0px 100px 60px rgba(126, 8, 126, 0.097) inset;
+}
+
+@keyframes rotate-clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-anti-clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.left-center-figma-icon {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.top-center-left-github-icon {
+  position: absolute;
+  top: 32px;
+  left: 45px;
+  transform: translate(-50%, -50%);
+}
+.top-center-circle-threeline-icon {
+  position: absolute;
+  top: 144px;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.top-bottom-half-cloud-icon {
+  position: absolute;
+  bottom: 45px;
+  left: 32px;
+  transform: translate(-50%, 50%);
+}
+.bottom-left-center-neural-icon {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}
+.bottom-right-center-train-icon {
+  position: absolute;
+  bottom: 45px;
+  right: 32px;
+  transform: translate(50%, 50%);
+}
+.top-right-center-triangle-icon {
+  position: absolute;
+  top: 144px;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+.top-right-center-google-icon {
+  position: absolute;
+  top: 32px;
+  right: 45px;
+  transform: translate(50%, -50%);
+}
+.center-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
